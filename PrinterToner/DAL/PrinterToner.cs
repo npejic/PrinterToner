@@ -11,10 +11,10 @@ namespace PrinterToner.DAL
     {
         public PrinterTonerContext() : base("PrinterTonerContext") { }
 
-         public DbSet<Owner> Owners { get; set; }
-         public DbSet<Printer> Printers { get; set; }
-         public DbSet<Toner> Toners { get; set; }
-         public DbSet<Sale> Sales { get; set; }
+        public DbSet<Owner> Owners { get; set; }
+        public DbSet<Printer> Printers { get; set; }
+        public DbSet<Toner> Toners { get; set; }
+        public DbSet<Sale> Sales { get; set; }
          //public System.Data.Entity.DbSet<PrinterTonerEPC.Models.Printer> Printers { get; set; }
     }
 }
