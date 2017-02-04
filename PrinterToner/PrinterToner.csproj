@@ -125,6 +125,7 @@
     <Compile Include="Models\BaseClass.cs" />
     <Compile Include="Models\Owner.cs" />
     <Compile Include="Models\Printer.cs" />
+    <Compile Include="Models\Sale.cs" />
     <Compile Include="Models\Toner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

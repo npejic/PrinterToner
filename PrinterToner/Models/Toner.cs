@@ -13,5 +13,7 @@ namespace PrinterToner.Models
         [Required(ErrorMessage = "Morate uneti model tonera")]
         public int TonerModel { get; set; }
         public bool TonerIsOriginal { get; set; }
+
+        public virtual ICollection<Sale> Sales { get; set; }
     }
 }
