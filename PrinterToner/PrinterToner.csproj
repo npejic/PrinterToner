@@ -118,6 +118,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Owners1Controller.cs" />
+    <Compile Include="Controllers\PrintersController.cs" />
+    <Compile Include="Controllers\TonersController.cs" />
     <Compile Include="DAL\PrinterToner.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -164,6 +167,21 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Owners1\Create.cshtml" />
+    <Content Include="Views\Owners1\Delete.cshtml" />
+    <Content Include="Views\Owners1\Details.cshtml" />
+    <Content Include="Views\Owners1\Edit.cshtml" />
+    <Content Include="Views\Owners1\Index.cshtml" />
+    <Content Include="Views\Printers\Create.cshtml" />
+    <Content Include="Views\Printers\Delete.cshtml" />
+    <Content Include="Views\Printers\Details.cshtml" />
+    <Content Include="Views\Printers\Edit.cshtml" />
+    <Content Include="Views\Printers\Index.cshtml" />
+    <Content Include="Views\Toners\Create.cshtml" />
+    <Content Include="Views\Toners\Delete.cshtml" />
+    <Content Include="Views\Toners\Details.cshtml" />
+    <Content Include="Views\Toners\Edit.cshtml" />
+    <Content Include="Views\Toners\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

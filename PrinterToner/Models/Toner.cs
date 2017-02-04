@@ -14,6 +14,6 @@ namespace PrinterToner.Models
         public int TonerModel { get; set; }
         public bool TonerIsOriginal { get; set; }
 
-        public virtual ICollection<Sale> Sales { get; set; }
+        //public virtual ICollection<Sale> Sales { get; set; }
     }
 }

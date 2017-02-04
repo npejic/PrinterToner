@@ -9,18 +9,18 @@ namespace PrinterToner.Models
     {
         public int SaleID { get; set; }
         public DateTime SaleDate { get; set; }
-        public SaleType a { get; set; }
+        public Double Price { get; set; }
+        //public SaleType a { get; set; }
+        //public enum SaleType {Pausal, GratisRenta, Else}
 
-        public enum SaleType {Pausal, GratisRenta, Else}
-
-        public int OwnerID { get; set; }
-        public virtual Owner Owner { get; set; }
+        //public int OwnerID { get; set; }
+        //public virtual Owner Owner { get; set; }
         
-        public int PrinterID { get; set; }
-        public virtual Printer Printer { get; set; }
+        //public int PrinterID { get; set; }
+        //public virtual Printer Printer { get; set; }
         
-        public int TonerID { get; set; }
-        public virtual Toner Toner { get; set; }
+        //public int TonerID { get; set; }
+        //public virtual Toner Toner { get; set; }
 
     }
 }
