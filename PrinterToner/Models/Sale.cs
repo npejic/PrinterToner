@@ -11,7 +11,7 @@ namespace PrinterToner.Models
         public DateTime SaleDate { get; set; }
         public SaleType a { get; set; }
 
-        enum SaleType {Pausal, GratisRenta, Else}
+        public enum SaleType {Pausal, GratisRenta, Else}
 
         public int OwnerID { get; set; }
         public virtual Owner Owner { get; set; }
