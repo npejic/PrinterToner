@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PrinterToner.Models
 {
-    public class Printer
+    public class Printer : BaseClass
     {
         public int PrinterID { get; set; }
         [Required(ErrorMessage = "Morate uneti naziv proizvođača štamšača")]
