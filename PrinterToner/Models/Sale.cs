@@ -9,7 +9,7 @@ namespace PrinterToner.Models
     {
         public int SaleID { get; set; }
         public DateTime SaleDate { get; set; }
-        public Double Price { get; set; }
+        public float Price { get; set; }
         //public SaleType a { get; set; }
         //public enum SaleType {Pausal, GratisRenta, Else}
 

@@ -120,6 +120,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Owners1Controller.cs" />
     <Compile Include="Controllers\PrintersController.cs" />
+    <Compile Include="Controllers\Sales1Controller.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\TonersController.cs" />
     <Compile Include="DAL\PrinterToner.cs" />
     <Compile Include="Global.asax.cs">
@@ -182,6 +184,16 @@
     <Content Include="Views\Toners\Details.cshtml" />
     <Content Include="Views\Toners\Edit.cshtml" />
     <Content Include="Views\Toners\Index.cshtml" />
+    <Content Include="Views\Sales\Create.cshtml" />
+    <Content Include="Views\Sales\Delete.cshtml" />
+    <Content Include="Views\Sales\Details.cshtml" />
+    <Content Include="Views\Sales\Edit.cshtml" />
+    <Content Include="Views\Sales\Index.cshtml" />
+    <Content Include="Views\Sales1\Create.cshtml" />
+    <Content Include="Views\Sales1\Delete.cshtml" />
+    <Content Include="Views\Sales1\Details.cshtml" />
+    <Content Include="Views\Sales1\Edit.cshtml" />
+    <Content Include="Views\Sales1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
