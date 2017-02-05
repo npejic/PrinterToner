@@ -26,6 +26,6 @@ namespace PrinterToner.Models
         public bool OwnerIsInPDV { get; set; }
 
        public virtual ICollection<Printer> Printers { get; set; }
-//       public virtual ICollection<Sale> Sales { get; set; }
+       //public virtual ICollection<Sale> Sales { get; set; }
     }
 }

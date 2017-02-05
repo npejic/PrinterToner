@@ -1,0 +1,58 @@
+﻿@model PrinterToner.Models.Sale
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sale</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Printer.PrinterManufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Printer.PrinterManufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Toner.TonerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Toner.TonerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SaleDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaleDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.a)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.a)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SaleID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
