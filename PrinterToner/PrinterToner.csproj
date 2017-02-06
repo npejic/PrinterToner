@@ -120,7 +120,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Owners1Controller.cs" />
     <Compile Include="Controllers\PrintersController.cs" />
-    <Compile Include="Controllers\Sales1Controller.cs" />
     <Compile Include="Controllers\Sales2Controller.cs" />
     <Compile Include="Controllers\Sales4Controller.cs" />
     <Compile Include="Controllers\Sales5Controller.cs" />
@@ -196,11 +195,6 @@
     <Content Include="Views\Sales\Details.cshtml" />
     <Content Include="Views\Sales\Edit.cshtml" />
     <Content Include="Views\Sales\Index.cshtml" />
-    <Content Include="Views\Sales1\Create.cshtml" />
-    <Content Include="Views\Sales1\Delete.cshtml" />
-    <Content Include="Views\Sales1\Details.cshtml" />
-    <Content Include="Views\Sales1\Edit.cshtml" />
-    <Content Include="Views\Sales1\Index.cshtml" />
     <Content Include="Views\Sales4\Create.cshtml" />
     <Content Include="Views\Sales4\Delete.cshtml" />
     <Content Include="Views\Sales4\Details.cshtml" />
