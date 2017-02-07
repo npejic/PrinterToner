@@ -117,6 +117,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContractsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Owners1Controller.cs" />
     <Compile Include="Controllers\PrintersController.cs" />
@@ -134,6 +135,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BaseClass.cs" />
+    <Compile Include="Models\Contract.cs" />
     <Compile Include="Models\Owner.cs" />
     <Compile Include="Models\Printer.cs" />
     <Compile Include="Models\Sale.cs" />
@@ -230,6 +232,11 @@
     <Content Include="Views\Sales98\Details.cshtml" />
     <Content Include="Views\Sales98\Edit.cshtml" />
     <Content Include="Views\Sales98\Index.cshtml" />
+    <Content Include="Views\Contracts\Create.cshtml" />
+    <Content Include="Views\Contracts\Delete.cshtml" />
+    <Content Include="Views\Contracts\Details.cshtml" />
+    <Content Include="Views\Contracts\Edit.cshtml" />
+    <Content Include="Views\Contracts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

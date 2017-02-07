@@ -15,6 +15,7 @@ namespace PrinterToner.DAL
         public DbSet<Printer> Printers { get; set; }
         public DbSet<Toner> Toners { get; set; }
         public DbSet<Sale> Sales { get; set; }
+        public DbSet<Contract> Contracts { get; set; } 
          //public System.Data.Entity.DbSet<PrinterTonerEPC.Models.Printer> Printers { get; set; }
     }
 }
