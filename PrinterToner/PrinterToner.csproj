@@ -117,9 +117,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ContractsController.cs" />
+    <Compile Include="Controllers\Contracts3Controller.cs" />
+    <Compile Include="Controllers\Contracts4Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Owners1Controller.cs" />
+    <Compile Include="Controllers\Owners2Controller.cs" />
     <Compile Include="Controllers\PrintersController.cs" />
     <Compile Include="Controllers\Sales2Controller.cs" />
     <Compile Include="Controllers\Sales4Controller.cs" />
@@ -232,11 +234,21 @@
     <Content Include="Views\Sales98\Details.cshtml" />
     <Content Include="Views\Sales98\Edit.cshtml" />
     <Content Include="Views\Sales98\Index.cshtml" />
-    <Content Include="Views\Contracts\Create.cshtml" />
-    <Content Include="Views\Contracts\Delete.cshtml" />
-    <Content Include="Views\Contracts\Details.cshtml" />
-    <Content Include="Views\Contracts\Edit.cshtml" />
-    <Content Include="Views\Contracts\Index.cshtml" />
+    <Content Include="Views\Contracts3\Create.cshtml" />
+    <Content Include="Views\Contracts3\Delete.cshtml" />
+    <Content Include="Views\Contracts3\Details.cshtml" />
+    <Content Include="Views\Contracts3\Edit.cshtml" />
+    <Content Include="Views\Contracts3\Index.cshtml" />
+    <Content Include="Views\Owners2\Create.cshtml" />
+    <Content Include="Views\Owners2\Delete.cshtml" />
+    <Content Include="Views\Owners2\Details.cshtml" />
+    <Content Include="Views\Owners2\Edit.cshtml" />
+    <Content Include="Views\Owners2\Index.cshtml" />
+    <Content Include="Views\Contracts4\Create.cshtml" />
+    <Content Include="Views\Contracts4\Delete.cshtml" />
+    <Content Include="Views\Contracts4\Details.cshtml" />
+    <Content Include="Views\Contracts4\Edit.cshtml" />
+    <Content Include="Views\Contracts4\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -267,7 +279,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63497</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63497/</IISUrl>
+          <IISUrl>http://localhost:63498/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -11,112 +11,107 @@ using PrinterToner.Models;
 
 namespace PrinterToner.Controllers
 {
-    public class ContractsController : Controller
+    public class Owners2Controller : Controller
     {
         private PrinterTonerContext db = new PrinterTonerContext();
 
-        // GET: Contracts
+        // GET: Owners2
         public ActionResult Index()
         {
-            var contracts = db.Contracts.Include(c => c.Owner);
-            return View(contracts.ToList());
+            return View(db.Owners.ToList());
         }
 
-        // GET: Contracts/Details/5
+        // GET: Owners2/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Contract contract = db.Contracts.Find(id);
-            if (contract == null)
+            Owner owner = db.Owners.Find(id);
+            if (owner == null)
             {
                 return HttpNotFound();
             }
-            return View(contract);
+            return View(owner);
         }
 
-        // GET: Contracts/Create
+        // GET: Owners2/Create
         public ActionResult Create()
         {
-            ViewBag.OwnerID = new SelectList(db.Owners, "OwnerID", "OwnerName");
             return View();
         }
 
-        // POST: Contracts/Create
+        // POST: Owners2/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,ContractName,ContractDuration,OwnerID,ContractComplete")] Contract contract)
+        public ActionResult Create([Bind(Include = "OwnerID,OwnerName,OwnerTelephone,OwnerAddress,OwnerContact,OwnerContactTelephone,OwnerPIB,OwnerMatBroj,OwnerIsInPDV,Created")] Owner owner)
         {
             if (ModelState.IsValid)
             {
-                db.Contracts.Add(contract);
+                db.Owners.Add(owner);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.OwnerID = new SelectList(db.Owners, "OwnerID", "OwnerName", contract.OwnerID);
-            return View(contract);
+            return View(owner);
         }
 
-        // GET: Contracts/Edit/5
+        // GET: Owners2/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Contract contract = db.Contracts.Find(id);
-            if (contract == null)
+            Owner owner = db.Owners.Find(id);
+            if (owner == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.OwnerID = new SelectList(db.Owners, "OwnerID", "OwnerName", contract.OwnerID);
-            return View(contract);
+            return View(owner);
         }
 
-        // POST: Contracts/Edit/5
+        // POST: Owners2/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,ContractName,ContractDuration,OwnerID,ContractComplete")] Contract contract)
+        public ActionResult Edit([Bind(Include = "OwnerID,OwnerName,OwnerTelephone,OwnerAddress,OwnerContact,OwnerContactTelephone,OwnerPIB,OwnerMatBroj,OwnerIsInPDV,Created")] Owner owner)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(contract).State = EntityState.Modified;
+                db.Entry(owner).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.OwnerID = new SelectList(db.Owners, "OwnerID", "OwnerName", contract.OwnerID);
-            return View(contract);
+            return View(owner);
         }
 
-        // GET: Contracts/Delete/5
+        // GET: Owners2/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Contract contract = db.Contracts.Find(id);
-            if (contract == null)
+            Owner owner = db.Owners.Find(id);
+            if (owner == null)
             {
                 return HttpNotFound();
             }
-            return View(contract);
+            return View(owner);
         }
 
-        // POST: Contracts/Delete/5
+        // POST: Owners2/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Contract contract = db.Contracts.Find(id);
-            db.Contracts.Remove(contract);
+            Owner owner = db.Owners.Find(id);
+            db.Owners.Remove(owner);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
