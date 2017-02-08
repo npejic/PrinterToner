@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PrinterToner.Models
 {
-    public class Sale
+    public class Sale : BaseClass
     {
         public int SaleID { get; set; }
         [Required(ErrorMessage = "Morate uneti datum prodaje YYYY.MM.DD")]
@@ -19,8 +19,8 @@ namespace PrinterToner.Models
         [Range(1, 36, ErrorMessage = "Trajanje ugovora se unosi u mesecima i mora biti veće od 0")]
         public int SaleDuration { get; set; }
 
-        //public int OwnerID { get; set; }
-        //public virtual Owner Owner { get; set; }
+        public int ContractID { get; set; }
+        public virtual Contract Contract { get; set; }
 
         public int PrinterID { get; set; }
         public virtual Printer Printer { get; set; }

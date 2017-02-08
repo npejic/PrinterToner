@@ -117,21 +117,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\Contracts3Controller.cs" />
-    <Compile Include="Controllers\Contracts4Controller.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Owners1Controller.cs" />
-    <Compile Include="Controllers\Owners2Controller.cs" />
-    <Compile Include="Controllers\PrintersController.cs" />
-    <Compile Include="Controllers\Sales2Controller.cs" />
-    <Compile Include="Controllers\Sales4Controller.cs" />
-    <Compile Include="Controllers\Sales5Controller.cs" />
-    <Compile Include="Controllers\Sales98Controller.cs" />
-    <Compile Include="Controllers\Sales99Controller.cs" />
-    <Compile Include="Controllers\SalesController.cs" />
-    <Compile Include="Controllers\Toners1Controller.cs" />
-    <Compile Include="Controllers\Toners2Controller.cs" />
-    <Compile Include="Controllers\TonersController.cs" />
+    <Compile Include="Controllers\OwnersController.cs" />
     <Compile Include="DAL\PrinterToner.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -179,76 +165,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Owners1\Create.cshtml" />
-    <Content Include="Views\Owners1\Delete.cshtml" />
-    <Content Include="Views\Owners1\Details.cshtml" />
-    <Content Include="Views\Owners1\Edit.cshtml" />
-    <Content Include="Views\Owners1\Index.cshtml" />
-    <Content Include="Views\Printers\Create.cshtml" />
-    <Content Include="Views\Printers\Delete.cshtml" />
-    <Content Include="Views\Printers\Details.cshtml" />
-    <Content Include="Views\Printers\Edit.cshtml" />
-    <Content Include="Views\Printers\Index.cshtml" />
-    <Content Include="Views\Toners\Create.cshtml" />
-    <Content Include="Views\Toners\Delete.cshtml" />
-    <Content Include="Views\Toners\Details.cshtml" />
-    <Content Include="Views\Toners\Edit.cshtml" />
-    <Content Include="Views\Toners\Index.cshtml" />
-    <Content Include="Views\Sales\Create.cshtml" />
-    <Content Include="Views\Sales\Delete.cshtml" />
-    <Content Include="Views\Sales\Details.cshtml" />
-    <Content Include="Views\Sales\Edit.cshtml" />
-    <Content Include="Views\Sales\Index.cshtml" />
-    <Content Include="Views\Sales4\Create.cshtml" />
-    <Content Include="Views\Sales4\Delete.cshtml" />
-    <Content Include="Views\Sales4\Details.cshtml" />
-    <Content Include="Views\Sales4\Edit.cshtml" />
-    <Content Include="Views\Sales4\Index.cshtml" />
-    <Content Include="Views\Toners1\Create.cshtml" />
-    <Content Include="Views\Toners1\Delete.cshtml" />
-    <Content Include="Views\Toners1\Details.cshtml" />
-    <Content Include="Views\Toners1\Edit.cshtml" />
-    <Content Include="Views\Toners1\Index.cshtml" />
-    <Content Include="Views\Toners2\Create.cshtml" />
-    <Content Include="Views\Toners2\Delete.cshtml" />
-    <Content Include="Views\Toners2\Details.cshtml" />
-    <Content Include="Views\Toners2\Edit.cshtml" />
-    <Content Include="Views\Toners2\Index.cshtml" />
-    <Content Include="Views\Sales2\Create.cshtml" />
-    <Content Include="Views\Sales2\Delete.cshtml" />
-    <Content Include="Views\Sales2\Details.cshtml" />
-    <Content Include="Views\Sales2\Edit.cshtml" />
-    <Content Include="Views\Sales2\Index.cshtml" />
-    <Content Include="Views\Sales5\Create.cshtml" />
-    <Content Include="Views\Sales5\Delete.cshtml" />
-    <Content Include="Views\Sales5\Details.cshtml" />
-    <Content Include="Views\Sales5\Edit.cshtml" />
-    <Content Include="Views\Sales5\Index.cshtml" />
-    <Content Include="Views\Sales99\Create.cshtml" />
-    <Content Include="Views\Sales99\Delete.cshtml" />
-    <Content Include="Views\Sales99\Details.cshtml" />
-    <Content Include="Views\Sales99\Edit.cshtml" />
-    <Content Include="Views\Sales99\Index.cshtml" />
-    <Content Include="Views\Sales98\Create.cshtml" />
-    <Content Include="Views\Sales98\Delete.cshtml" />
-    <Content Include="Views\Sales98\Details.cshtml" />
-    <Content Include="Views\Sales98\Edit.cshtml" />
-    <Content Include="Views\Sales98\Index.cshtml" />
-    <Content Include="Views\Contracts3\Create.cshtml" />
-    <Content Include="Views\Contracts3\Delete.cshtml" />
-    <Content Include="Views\Contracts3\Details.cshtml" />
-    <Content Include="Views\Contracts3\Edit.cshtml" />
-    <Content Include="Views\Contracts3\Index.cshtml" />
-    <Content Include="Views\Owners2\Create.cshtml" />
-    <Content Include="Views\Owners2\Delete.cshtml" />
-    <Content Include="Views\Owners2\Details.cshtml" />
-    <Content Include="Views\Owners2\Edit.cshtml" />
-    <Content Include="Views\Owners2\Index.cshtml" />
-    <Content Include="Views\Contracts4\Create.cshtml" />
-    <Content Include="Views\Contracts4\Delete.cshtml" />
-    <Content Include="Views\Contracts4\Details.cshtml" />
-    <Content Include="Views\Contracts4\Edit.cshtml" />
-    <Content Include="Views\Contracts4\Index.cshtml" />
+    <Content Include="Views\Owners\Create.cshtml" />
+    <Content Include="Views\Owners\Delete.cshtml" />
+    <Content Include="Views\Owners\Details.cshtml" />
+    <Content Include="Views\Owners\Edit.cshtml" />
+    <Content Include="Views\Owners\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,7 +200,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63497</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63498/</IISUrl>
+          <IISUrl>http://localhost:63499/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

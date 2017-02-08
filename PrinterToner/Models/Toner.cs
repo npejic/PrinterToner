@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PrinterToner.Models
 {
-    public class Toner :BaseClass
+    public class Toner : BaseClass
     {
         public int TonerID { get; set; }
         [Required(ErrorMessage = "Morate uneti model tonera")]

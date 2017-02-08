@@ -25,7 +25,7 @@ namespace PrinterToner.Models
         public string OwnerMatBroj { get; set; }
         public bool OwnerIsInPDV { get; set; }
 
-       public virtual ICollection<Printer> Printers { get; set; }
+       //public virtual ICollection<Printer> Printers { get; set; }
        public virtual ICollection<Contract> Contracts { get; set; }
     }
 }
